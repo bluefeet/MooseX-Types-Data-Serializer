@@ -33,8 +33,12 @@ MooseX::Types::Data::Serializer - A Data::Serializer type library for Moose.
         serializer => { serializer => 'YAML', digester => 'MD5' },
         raw_serializer => { serializer => 'Storable' },
     );
-
+    
     use MooseX::Types::Data::Serializer qw( Serializer RawSerializer );
+    my $serializer = to_Serializer( 'YAML' );
+    my $raw_serializer = to_RawSerializer({ serializer=>'Storable', digester=>'MD5' });
+    if (is_Serializer($serializer)) { ... }
+    if (is_RawSerializer($raw_serializer)) { ... }
 
 =head1 DESCRIPTION
 
