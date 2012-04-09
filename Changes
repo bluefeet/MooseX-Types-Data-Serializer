@@ -1,6 +1,8 @@
 Revision history for Perl extension MooseX::Types::Data::Serializer.
 
 {{$NEXT}}
+
+0.02      2012-04-08
  - Add copyright and license info.
 
 0.01      2012-04-08
