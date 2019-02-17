@@ -1,8 +1,8 @@
-=head1 NAME
+# NAME
 
 MooseX::Types::Data::Serializer - A Data::Serializer type library for Moose.
 
-=head1 SYNOPSIS
+# SYNOPSIS
 
     package MyClass;
     use Moose;
@@ -40,42 +40,41 @@ MooseX::Types::Data::Serializer - A Data::Serializer type library for Moose.
     if (is_Serializer($serializer)) { ... }
     if (is_RawSerializer($raw_serializer)) { ... }
 
-=head1 DESCRIPTION
+# DESCRIPTION
 
-This module provides L<Data::Serializer> types and coercians for L<Moose> attributes.
+This module provides [Data::Serializer](https://metacpan.org/pod/Data::Serializer) types and coercians for [Moose](https://metacpan.org/pod/Moose) attributes.
 
 Two standard Moose types are provided; Data::Serializer and Data::Serializer::Raw.
 In addition, two other MooseX::Types types are provided; Serializer and RawSerializer.
 
-See the L<MooseX::Types> documentation for details on how that works.
+See the [MooseX::Types](https://metacpan.org/pod/MooseX::Types) documentation for details on how that works.
 
-=head1 TYPES
+# TYPES
 
-=head2 Data::Serializer
+## Data::Serializer
 
 This is a standard Moose type that provides coercion from a string or a hashref.  If
 a string is passed then it is used for the 'serializer' argumen to Data::Serializer->new().
 If a hashref is being coerced from then it will be de-referenced and used as the
 arguments to Data::Serializer->new().
 
-=head2 Data::Serializer::Raw
+## Data::Serializer::Raw
 
-This type works just like Data::Serializer, but for the L<Data::Serializer::Raw> module.
+This type works just like Data::Serializer, but for the [Data::Serializer::Raw](https://metacpan.org/pod/Data::Serializer::Raw) module.
 
-=head2 Serializer
+## Serializer
 
-This is a L<MooseX::Types> type that works just like the Data::Serializer type.
+This is a [MooseX::Types](https://metacpan.org/pod/MooseX::Types) type that works just like the Data::Serializer type.
 
-=head2 RawSerializer
+## RawSerializer
 
 Just like the Serializer type, but for Data::Serializer::Raw.
 
-=head1 AUTHOR
+# AUTHOR
 
 Aran Clary Deltac <bluefeet@gmail.com>
 
-=head1 LICENSE
+# LICENSE
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
-
