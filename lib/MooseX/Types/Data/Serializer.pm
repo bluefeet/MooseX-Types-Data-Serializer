@@ -1,6 +1,6 @@
 package MooseX::Types::Data::Serializer;
 
-$MooseX::Types::Data::Serializer::VERSION = '0.02';
+$MooseX::Types::Data::Serializer::VERSION = '0.03';
 
 =head1 NAME
 
