@@ -44,7 +44,8 @@
          "requires" : {
             "Data::Serializer" : "0.54",
             "Moose" : "1.23",
-            "MooseX::Types" : "0.37"
+            "MooseX::Types" : "0.37",
+            "perl" : "5.008001"
          }
       },
       "test" : {
