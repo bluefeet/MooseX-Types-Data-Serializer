@@ -42,12 +42,12 @@ MooseX::Types::Data::Serializer - A Data::Serializer type library for Moose.
 
 # DESCRIPTION
 
-This module provides [Data::Serializer](https://metacpan.org/pod/Data::Serializer) types and coercians for [Moose](https://metacpan.org/pod/Moose) attributes.
+This module provides [Data::Serializer](https://metacpan.org/pod/Data%3A%3ASerializer) types and coercians for [Moose](https://metacpan.org/pod/Moose) attributes.
 
 Two standard Moose types are provided; Data::Serializer and Data::Serializer::Raw.
 In addition, two other MooseX::Types types are provided; Serializer and RawSerializer.
 
-See the [MooseX::Types](https://metacpan.org/pod/MooseX::Types) documentation for details on how that works.
+See the [MooseX::Types](https://metacpan.org/pod/MooseX%3A%3ATypes) documentation for details on how that works.
 
 # TYPES
 
@@ -60,11 +60,11 @@ arguments to Data::Serializer->new().
 
 ## Data::Serializer::Raw
 
-This type works just like Data::Serializer, but for the [Data::Serializer::Raw](https://metacpan.org/pod/Data::Serializer::Raw) module.
+This type works just like Data::Serializer, but for the [Data::Serializer::Raw](https://metacpan.org/pod/Data%3A%3ASerializer%3A%3ARaw) module.
 
 ## Serializer
 
-This is a [MooseX::Types](https://metacpan.org/pod/MooseX::Types) type that works just like the Data::Serializer type.
+This is a [MooseX::Types](https://metacpan.org/pod/MooseX%3A%3ATypes) type that works just like the Data::Serializer type.
 
 ## RawSerializer
 
@@ -72,9 +72,9 @@ Just like the Serializer type, but for Data::Serializer::Raw.
 
 # AUTHOR
 
-Aran Clary Deltac <bluefeet@gmail.com>
+    Aran Clary Deltac <bluefeet@gmail.com>
 
 # LICENSE
 
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.

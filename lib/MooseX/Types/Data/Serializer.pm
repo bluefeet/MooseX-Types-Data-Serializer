@@ -4,6 +4,8 @@ use strict;
 use warnings;
 our $VERSION = '0.03';
 
+=encoding utf8
+
 =head1 NAME
 
 MooseX::Types::Data::Serializer - A Data::Serializer type library for Moose.
@@ -117,10 +119,12 @@ __END__
 
 =head1 AUTHOR
 
-Aran Clary Deltac <bluefeet@gmail.com>
+    Aran Clary Deltac <bluefeet@gmail.com>
 
 =head1 LICENSE
 
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+=cut
 
