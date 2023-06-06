@@ -4,41 +4,43 @@ MooseX::Types::Data::Serializer - A Data::Serializer type library for Moose.
 
 # SYNOPSIS
 
-    package MyClass;
-    use Moose;
-    use MooseX::Types::Data::Serializer;
-    
-    has serializer => (
-        is       => 'ro',
-        isa      => 'Data::Serializer',
-        required => 1,
-        coerce   => 1,
-    );
-    
-    has raw_serializer => (
-        is       => 'ro',
-        isa      => 'Data::Serializer::Raw',
-        required => 1,
-        coerce   => 1,
-    );
-    
-    # String will be coerced in to a Data::Serializer object:
-    MyClass->new(
-        serializer     => 'YAML',
-        raw_serializer => 'Storable',
-    );
-    
-    # Hashref will be coerced as well:
-    MyClass->new(
-        serializer => { serializer => 'YAML', digester => 'MD5' },
-        raw_serializer => { serializer => 'Storable' },
-    );
-    
-    use MooseX::Types::Data::Serializer qw( Serializer RawSerializer );
-    my $serializer = to_Serializer( 'YAML' );
-    my $raw_serializer = to_RawSerializer({ serializer=>'Storable', digester=>'MD5' });
-    if (is_Serializer($serializer)) { ... }
-    if (is_RawSerializer($raw_serializer)) { ... }
+```perl
+package MyClass;
+use Moose;
+use MooseX::Types::Data::Serializer;
+
+has serializer => (
+    is       => 'ro',
+    isa      => 'Data::Serializer',
+    required => 1,
+    coerce   => 1,
+);
+
+has raw_serializer => (
+    is       => 'ro',
+    isa      => 'Data::Serializer::Raw',
+    required => 1,
+    coerce   => 1,
+);
+
+# String will be coerced in to a Data::Serializer object:
+MyClass->new(
+    serializer     => 'YAML',
+    raw_serializer => 'Storable',
+);
+
+# Hashref will be coerced as well:
+MyClass->new(
+    serializer => { serializer => 'YAML', digester => 'MD5' },
+    raw_serializer => { serializer => 'Storable' },
+);
+
+use MooseX::Types::Data::Serializer qw( Serializer RawSerializer );
+my $serializer = to_Serializer( 'YAML' );
+my $raw_serializer = to_RawSerializer({ serializer=>'Storable', digester=>'MD5' });
+if (is_Serializer($serializer)) { ... }
+if (is_RawSerializer($raw_serializer)) { ... }
+```
 
 # DESCRIPTION
 
@@ -72,7 +74,9 @@ Just like the Serializer type, but for Data::Serializer::Raw.
 
 # AUTHOR
 
-    Aran Clary Deltac <bluefeet@gmail.com>
+```
+Aran Clary Deltac <bluefeet@gmail.com>
+```
 
 # LICENSE
 
